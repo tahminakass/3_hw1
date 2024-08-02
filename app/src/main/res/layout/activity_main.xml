@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="14dp"
+            android:id="@+id/img_ph"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/img_ph"
+            app:layout_constraintStart_toStartOf="@+id/img_ph"
+            app:layout_constraintTop_toBottomOf="@+id/img_ph"
+            android:textSize="18sp"
+            android:text="@string/photos"
+            android:id="@+id/text_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:padding="14dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_ph"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/settings"
+            android:src="@drawable/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/settings"
+            app:layout_constraintStart_toStartOf="@+id/settings"
+            app:layout_constraintTop_toBottomOf="@+id/settings"
+            android:textSize="18sp"
+            android:text="@string/settings"
+            android:id="@+id/text_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="28dp"
+            android:padding="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/settings"
+            android:src="@drawable/option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/option"
+            app:layout_constraintStart_toStartOf="@+id/option"
+            app:layout_constraintTop_toBottomOf="@+id/option"
+            android:textSize="18sp"
+            android:text="@string/option"
+            android:id="@+id/text_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

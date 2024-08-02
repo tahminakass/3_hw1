@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">3_hw1</string>
+    <string name="second_screen">Открыть второй экран</string>
+    <string name="photos">Photos</string>
+    <string name="settings">Settings</string>
+    <string name="option">Option</string>
+</resources>
